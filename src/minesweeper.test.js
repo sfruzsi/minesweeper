@@ -111,5 +111,15 @@ describe('Testing Mine Sweeper', () => {
       game.addMines();
       expect(game.flagCell(1, 1)).toBe('Cell flagged as mine!');
     });
+
+    it('Given a board with mine on [1,1] When click [0,1] and I flag [1,1] Then both appears on board', () => {
+      global.Math.random = () => 0.5;
+      game.addMines();
+      game.clickCell(0, 1);
+      game.flagCell(1, 1);
+      expect(game.board).toBe(
+        '+-+-+-+\n| |1| |\n+-+-+-+\n| |*| |\n+-+-+-+\n| | | |\n+-+-+-+'
+      );
+    });
   });
 });
