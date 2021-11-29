@@ -25,5 +25,14 @@ describe('Testing Mine Sweeper', () => {
         ['', '', '']
       ]);
     });
+
+    it('Given 3x3 board When I start the game Then I add random number of mines', () => {
+      global.Math.random = () => 0.5;
+      expect(addMines()).toStrictEqual([
+        ['', '', ''],
+        ['', 'X', ''],
+        ['', '', '']
+      ]);
+    });
   });
 });
