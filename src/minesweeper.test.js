@@ -59,5 +59,12 @@ describe('Testing Mine Sweeper', () => {
     it('Given board with mine on [1,1] When I click on [0,0] Then cell cleared returns', () => {
       expect(game.clickCell(0, 0)).toBe('Cleared cell');
     });
+
+    it('Given board with mine on [1,1] When I click on [0,0] Then cell cleared returns', () => {
+      game.clickCell(0, 0);
+      expect(game.board).toBe(
+        '+-+-+-+\n|1| | |\n+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+'
+      );
+    });
   });
 });
