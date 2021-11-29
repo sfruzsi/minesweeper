@@ -20,8 +20,18 @@ class MineSweeper {
   };
 
   clickCell = (x, y) => {
-    this.board = '+-+-+-+\n| | | |\n+-+-+-+\n| |X| |\n+-+-+-+\n| | | |\n+-+-+-+';
-    return x === 1 ? 'BOOM!' : 'Cleared cell';
+    if (this.matrix[x][y] !== 'X') {
+      const index = this.board.split(' ', 3 * x + y + 1).join(' ').length;
+      this.board = `${this.board.substr(0, index)}1${this.board.substr(
+        index + 1
+      )}`;
+      return 'Cleared cell';
+    }
+    const index = this.board.split(' ', 3 * x + y + 1).join(' ').length;
+    this.board = `${this.board.substr(0, index)}X${this.board.substr(
+      index + 1
+    )}`;
+    return 'BOOM!';
   };
 }
 
