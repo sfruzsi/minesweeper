@@ -41,4 +41,4 @@
 
 > As a player I want the cells surrounding a 0 appear when I click on it So that I can see the empty fields
 
-- Scenario 1: Given a board When I click on a cell with \_ Then the cells next to it will appear on the board
+- Scenario 1: Given a board When I click on a blank cell Then the cells next to it will appear on the board
