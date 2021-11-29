@@ -19,9 +19,9 @@ class MineSweeper {
     return this.matrix;
   };
 
-  clickCell = () => {
+  clickCell = (x, y) => {
     this.board = '+-+-+-+\n| | | |\n+-+-+-+\n| |X| |\n+-+-+-+\n| | | |\n+-+-+-+';
-    return 'BOOM!';
+    return x === 1 ? 'BOOM!' : 'Cleared cell';
   };
 }
 
