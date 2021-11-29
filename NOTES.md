@@ -13,7 +13,9 @@
 
 > Pomodoro 2
 
-- Note
+- Scenario 2
+- Write User story 2 & Scenarios
+- US2 Scenarios
 
 > Pomodoro 3
 

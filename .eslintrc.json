@@ -14,8 +14,9 @@
   },
   "rules": {
     "prettier/prettier": "error",
-	"comma-dangle": 0,
-    "no-plusplus": "off"
+	  "comma-dangle": 0,
+    "no-plusplus": "off",
+    "linebreak-style": 0
   },
   "plugins": ["prettier"],
   "globals": {

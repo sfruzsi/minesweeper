@@ -1,4 +1,4 @@
-const createBoard = require('./minesweeper');
+const { createBoard, addMines } = require('./minesweeper');
 
 describe('Testing Mine Sweeper', () => {
   describe('US1 - Board creation', () => {
