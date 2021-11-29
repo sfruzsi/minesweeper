@@ -15,7 +15,10 @@ const addMines = () => {
   return matrix;
 };
 
+const clickCell = () => 'BOOM!';
+
 module.exports = {
   createBoard,
-  addMines
+  addMines,
+  clickCell
 };
