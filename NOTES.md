@@ -19,8 +19,8 @@
 
 > Pomodoro 3
 
-- US2 Scenarios
+- US2 Scenarios ✅
 
 > Pomodoro 4
 
-- Note
+- US3 & scenarios

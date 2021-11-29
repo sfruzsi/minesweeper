@@ -24,3 +24,9 @@
 - Scenario 1: Given the board has mines When I click on te mine Then the mine goes BOOM
 - Scenario 2: Given the board has mines When I click on the mine Then the board revelas the mine
 - Scenario 3: Given the board has mines When I click on a non-mine Then the board revelas the number of mines
+
+## User storty 3
+
+> As a player I want to click the second time So that I can continue the game
+
+- Scenario 1: Given the board has mines When I click first on a non-mine then a mine Then both should appear on the board
