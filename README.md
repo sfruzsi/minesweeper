@@ -12,7 +12,7 @@
 
 ## User story 1
 
-> As a player I wnat to see the board So that I can play
+> As a player I want to see the board and have mines So that I can play
 
 - Scenario 1: Given the board is 3x3 When I start the game Then I see a 3x3 board
 - Scenario 2: Given the board is 3x3 When I create the board Then I have 1 < x < 9 number of mines
