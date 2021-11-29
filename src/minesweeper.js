@@ -44,6 +44,10 @@ class MineSweeper {
     )}`;
     return 'BOOM!';
   };
+
+  flagCell = () => {
+    this.board = '+-+-+-+\n| | | |\n+-+-+-+\n| |*| |\n+-+-+-+\n| | | |\n+-+-+-+';
+  };
 }
 
 module.exports = {
