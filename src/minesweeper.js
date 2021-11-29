@@ -1,2 +1,2 @@
-const minesweeper = () => {};
-module.exports = minesweeper;
+const createBoard = () => '+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+';
+module.exports = createBoard;
