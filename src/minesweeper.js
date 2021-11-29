@@ -19,7 +19,10 @@ class MineSweeper {
     return this.matrix;
   };
 
-  clickCell = () => 'BOOM!';
+  clickCell = () => {
+    this.board = '+-+-+-+\n| | | |\n+-+-+-+\n| |X| |\n+-+-+-+\n| | | |\n+-+-+-+';
+    return 'BOOM!';
+  };
 }
 
 module.exports = {
