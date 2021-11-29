@@ -95,4 +95,15 @@ describe('Testing Mine Sweeper', () => {
       );
     });
   });
+
+  describe('US4 - Flag cells', () => {
+    it('Given a board with mine on [1,1] When I flag [1,1] Then * appear on board', () => {
+      global.Math.random = () => 0.5;
+      game.addMines();
+      game.flagCell(1, 1);
+      expect(game.board).toBe(
+        '+-+-+-+\n| | | |\n+-+-+-+\n| |*| |\n+-+-+-+\n| | | |\n+-+-+-+'
+      );
+    });
+  });
 });
