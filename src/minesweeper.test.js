@@ -9,6 +9,7 @@ describe('Testing Mine Sweeper', () => {
     });
 
     it('Given 3x3 board When I start the game Then I add mine to [0,0]', () => {
+      global.Math.random = () => 0;
       expect(addMines()).toStrictEqual([
         ['X', '', ''],
         ['', '', ''],
