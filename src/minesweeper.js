@@ -47,6 +47,7 @@ class MineSweeper {
 
   flagCell = () => {
     this.board = '+-+-+-+\n| | | |\n+-+-+-+\n| |*| |\n+-+-+-+\n| | | |\n+-+-+-+';
+    return 'Cell flagged as mine!';
   };
 }
 
