@@ -1,6 +1,8 @@
 class MineSweeper {
   board = '+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+';
 
+  sBoard = '+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+';
+
   matrix = [
     ['', '', ''],
     ['', '', ''],
@@ -21,7 +23,7 @@ class MineSweeper {
 
   clickCell = (x, y) => {
     if (this.matrix[x][y] !== 'X') {
-      const position = this.board.split(' ', 3 * x + y + 1).join(' ').length;
+      const position = this.sBoard.split(' ', 3 * x + y + 1).join(' ').length;
       let mineCount = 0;
       for (let i = Math.max(x - 1, 0); i <= Math.min(x + 1, 2); i++) {
         for (let j = Math.max(y - 1, 0); j <= Math.min(y + 1, 2); j++) {
@@ -36,9 +38,9 @@ class MineSweeper {
       )}${mineCount}${this.board.substr(position + 1)}`;
       return 'Cleared cell';
     }
-    const index = this.board.split(' ', 3 * x + y + 1).join(' ').length;
-    this.board = `${this.board.substr(0, index)}X${this.board.substr(
-      index + 1
+    const position = this.sBoard.split(' ', 3 * x + y + 1).join(' ').length;
+    this.board = `${this.board.substr(0, position)}X${this.board.substr(
+      position + 1
     )}`;
     return 'BOOM!';
   };
