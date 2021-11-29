@@ -1,4 +1,4 @@
-const { createBoard, addMines } = require('./minesweeper');
+const { createBoard, addMines, clickCell } = require('./minesweeper');
 
 describe('Testing Mine Sweeper', () => {
   describe('US1 - Board creation', () => {
@@ -33,6 +33,12 @@ describe('Testing Mine Sweeper', () => {
         ['', 'X', ''],
         ['', '', '']
       ]);
+    });
+  });
+
+  describe('US2 - Clicking on a cell', () => {
+    it('Given board with mine on [1,1] When I click on [1,1] Then mine blows up', () => {
+      expect(clickCell(1, 1)).toBe('BOOM!');
     });
   });
 });
