@@ -23,4 +23,5 @@
 
 > Pomodoro 4
 
-- US3 & scenarios
+- US3 & scenarios ✅
+- US4

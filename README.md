@@ -30,3 +30,15 @@
 > As a player I want to click the second time So that I can continue the game
 
 - Scenario 1: Given the board has mines When I click first on a non-mine then a mine Then both should appear on the board
+
+## User story 4
+
+> As a player I want to flag the mines so that I can plan my moves
+
+- Scenario 1: Given the board has mines When I flag a cell Then a \* woll appear
+
+## User story 5
+
+> As a player I want the cells surrounding a 0 appear when I click on it So that I can see the empty fields
+
+- Scenario 1: Given a board When I click on a cell with \_ Then the cells next to it will appear on the board
