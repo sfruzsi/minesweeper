@@ -44,5 +44,12 @@ describe('Testing Mine Sweeper', () => {
     it('Given board with mine on [1,1] When I click on [1,1] Then mine blows up', () => {
       expect(game.clickCell(1, 1)).toBe('BOOM!');
     });
+
+    it('Given board with mine on [1,1] When I click on [1,1] Then mine blows up', () => {
+      game.clickCell(1, 1);
+      expect(game.board).toBe(
+        '+-+-+-+\n| | | |\n+-+-+-+\n| |X| |\n+-+-+-+\n| | | |\n+-+-+-+'
+      );
+    });
   });
 });
