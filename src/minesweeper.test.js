@@ -1,9 +1,19 @@
 const createBoard = require('./minesweeper');
 
-describe('US1 - Board creation', () => {
-  it('Given 3x3 board When I start game Then I see the 3x3 board', () => {
-    expect(createBoard()).toBe(
-      '+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+'
-    );
+describe('Testing Mine Sweeper', () => {
+  describe('US1 - Board creation', () => {
+    it('Given 3x3 board When I start game Then I see the 3x3 board', () => {
+      expect(createBoard()).toBe(
+        '+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+'
+      );
+    });
+
+    it('Given 3x3 board When I start the game Then I add mine to [0,0]', () => {
+      expect(addMines()).toStrictEqual([
+        ['X', '', ''],
+        ['', '', ''],
+        ['', '', '']
+      ]);
+    });
   });
 });

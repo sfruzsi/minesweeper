@@ -1,11 +1,15 @@
 # Notes
 
+    ⚠ TODO
+    🚧 IN PROGRESS
+    ✅ DONE
+
 > Pomodoro 1
 
-- Write User story 1 & Scenarios
-- Scenario 1
-- Scenario 2
-- Write User story 2 & Scenarios
+- Write User story 1 & Scenarios ✅
+- Scenario 1 ✅
+- Scenario 2 🚧
+- Write User story 2 & Scenarios ⚠
 
 > Pomodoro 2
 
