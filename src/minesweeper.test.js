@@ -41,6 +41,10 @@ describe('Testing Mine Sweeper', () => {
   });
 
   describe('US2 - Clicking on a cell', () => {
+    beforeEach(() => {
+      global.Math.random = () => 0.5;
+      game.addMines();
+    });
     it('Given board with mine on [1,1] When I click on [1,1] Then mine blows up', () => {
       expect(game.clickCell(1, 1)).toBe('BOOM!');
     });
