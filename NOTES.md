@@ -13,13 +13,13 @@
 
 > Pomodoro 2
 
-- Scenario 2
-- Write User story 2 & Scenarios
-- US2 Scenarios
+- Scenario 2 ✅
+- Write User story 2 & Scenarios ✅
+- US2 Scenarios ⚠
 
 > Pomodoro 3
 
-- Note
+- US2 Scenarios
 
 > Pomodoro 4
 

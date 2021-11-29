@@ -19,4 +19,8 @@
 
 ## User story 2
 
-> As a ...
+> As a player I want to click on a cell So that I can see what's there
+
+- Scenario 1: Given the board has mines When I click on te mine Then the mine goes BOOM
+- Scenario 2: Given the board has mines When I click on the mine Then the board revelas the mine
+- Scenario 3: Given the board has mines When I click on a non-mine Then the board revelas the number of mines
