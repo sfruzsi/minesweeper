@@ -22,11 +22,11 @@ describe('Testing Mine Sweeper', () => {
     });
 
     it('Given 3x3 board When I start the game Then I add one random mine', () => {
-      global.Math.random = () => 0.5;
+      global.Math.random = () => 0.9;
       expect(game.addMines()).toStrictEqual([
         ['', '', ''],
-        ['', 'X', ''],
-        ['', '', '']
+        ['', '', ''],
+        ['', '', 'X']
       ]);
     });
 
